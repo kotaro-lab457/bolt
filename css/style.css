@@ -3,13 +3,17 @@
   0.header
 
   1.main
-    1.1 Bolt Theme（タイトル）
-    1.2 WHAT WE CAN DO?（詳細）
-    1.3 OUR LATEST WORK（仕事、画像）
-    1.4 OUR SKILLS（技術力）
-    1.5 SNS LINKS TAG（SNSへのリンクタグ）
+    1.1️⃣ Bolt Theme（タイトル）
+    1.2️⃣ WHAT WE CAN DO?（詳細）
+    1.3️⃣ OUR LATEST WORK（仕事、画像）
+    1.4️⃣ OUR SKILLS（技術力）
+    1.5️⃣ SNS LINKS TAG（SNSへのリンクタグ）
 
   2.footer
+
+  ・🟥🟥🟥  PC用  🟥🟥🟥
+  ・🟦🟦🟦  TAB用  🟦🟦🟦
+  ・🟨🟨🟨  SP用  🟨🟨🟨
 
 ---------------------------------*/
 
@@ -41,18 +45,15 @@
 
 /*---------------------------------
 
-  header
+  0.header
 
 ---------------------------------*/
 
-/* .header {
-  width: 100vw;
-} */
-
 .header-inner {
   display: flex;
-  justify-content: space-around;
-  margin: 15px 0;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 15px 0;
 }
 
 /*
@@ -72,19 +73,16 @@
   border: 1px solid #fff;
 }
 
-/*---------------------------------
-
-  main（メイン）
-
----------------------------------*/
-
-/* .main {
-  width: 100vw;
-} */
+/*
+  メニューバー（ header ）
+--------------------------------*/
+.header-contact-bar {
+  display: none;
+}
 
 /*---------------------------------
 
-  Bolt Theme（タイトル）
+  1.1️⃣ Bolt Theme（タイトル）1️⃣
 
 ---------------------------------*/
 
@@ -105,7 +103,9 @@
   color: #74cfae;
   font-size: 90px;
   font-weight: 700;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 20px;
+  line-height: 95px;
 }
 
 /*
@@ -115,10 +115,11 @@
 .title-text {
   font-size: 30px;
   color: #c0c0c0;
+  line-height: 40px;
 }
 /*---------------------------------
 
-  WHAT WE CAN DO?（詳細）
+  1.2️⃣ WHAT WE CAN DO?（詳細）2️⃣
 
 ---------------------------------*/
 .global {
@@ -127,8 +128,7 @@
 
 .global-inner {
   display: flex;
-  justify-content: center;
-  /* width: 55vw; */
+  justify-content: space-between;
   margin: 0 auto;
   padding-top: 50px;
 }
@@ -138,7 +138,7 @@
 ---------------------------------*/
 
 .global-thumb {
-  margin: 0 150px 0 120px;
+  margin-left: 100px;
 }
 
 /*
@@ -163,7 +163,7 @@
 
 /*---------------------------------
 
-  OUR LATEST WORK（仕事、画像）
+  1.3️⃣ OUR LATEST WORK（仕事、画像）3️⃣
 
 ---------------------------------*/
 
@@ -172,7 +172,6 @@
 }
 
 .content-inner {
-  width: 70vw;
   margin: 0 auto;
   padding: 60px 0 70px;
 }
@@ -216,13 +215,12 @@
 
 .content-catch {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   margin: 0 auto;
 }
 
 .content-catch-text {
-  margin-right: 90px;
   color: #333;
   line-height: 25px;
   text-align: center;
@@ -239,7 +237,7 @@
 
 /*---------------------------------
 
-  OUR SKILLS（技術力）
+  1.4️⃣ OUR SKILLS（技術）4️⃣
 
 ---------------------------------*/
 
@@ -272,13 +270,12 @@
 .skill__item {
   margin-left: 180px;
 }
+.skill__item:first-child {
+  margin-left: 0;
+}
 
 .skill__item img {
   margin-bottom: 15px;
-}
-
-.skill__item:first-child {
-  margin-left: 0;
 }
 
 .skill__item-text {
@@ -289,7 +286,7 @@
 
 /*---------------------------------
 (
-  SNS LINKS TAG（SNSへのリンクタグ）
+  1.5️⃣ SNS LINKS TAG（SNSへのリンクタグ）5️⃣
 
 ---------------------------------*/
 
@@ -298,9 +295,9 @@
 }
 
 .sns-inner {
-  padding: 200px 0;
   display: flex;
   justify-content: center;
+  padding: 200px 0;
 }
 
 /*
@@ -326,7 +323,7 @@
 
 /*---------------------------------
 
-  footer
+  2.footer
 
 ---------------------------------*/
 
@@ -336,7 +333,7 @@
 
 .footer-inner {
   padding: 20px 0 25px;
-  width: 70vw;
+  width: 1100px;
   margin: 0 auto;
 }
 
@@ -346,43 +343,281 @@
 }
 
 /* **************************
-  PC用
+  🟥🟥🟥  PC用  🟥🟥🟥
 ************************** */
 
 @media screen and (min-width: 1200px) {
-  .header-contact-bar {
-    display: none;
+  /*---------------------------------
+
+  1. header（ヘッダー）
+
+---------------------------------*/
+
+  .header-inner {
+    width: 1100px;
   }
 
-  .header-button {
-    display: block;
+  /*---------------------------------
+
+  1.2️⃣ WHAT WE CAN DO?（詳細）2️⃣
+
+  ---------------------------------*/
+
+  .global-inner {
+    width: 1100px;
+  }
+
+  /*---------------------------------
+
+  1.3️⃣ OUR LATEST WORK（仕事、画像）3️⃣
+
+  ---------------------------------*/
+
+  .content-inner {
+    width: 1100px;
+  }
+
+  /*
+  テキスト（OUR LATEST WORK）
+---------------------------------*/
+
+  .content-catch-text {
+    margin-right: 90px;
   }
 }
 
 /* **************************
-  TAB用
+  🟦🟦🟦  TAB用  🟦🟦🟦
 ************************** */
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header-contact-bar {
-    display: none;
+@media screen and (max-width: 1199px) {
+  /*---------------------------------
+
+  1. header（ヘッダー）
+
+---------------------------------*/
+
+  .header-inner {
+    width: 97%;
   }
 
-  .is-header-button {
-    display: block;
+  /*---------------------------------
+
+  1.2️⃣ WHAT WE CAN DO?（詳細）2️⃣
+
+---------------------------------*/
+
+  .global-inner {
+    flex-direction: column;
+    align-items: center;
+    width: 97%;
+    padding-bottom: 25px;
+  }
+
+  /*
+  global（画像：スマートフォン）
+---------------------------------*/
+
+  .global-thumb {
+    margin: 0 0 20px 0;
+  }
+
+  /*
+  global（テキスト）
+---------------------------------*/
+
+  .global-note {
+    width: 80%;
+  }
+
+  /*---------------------------------
+
+  1.3️⃣ OUR LATEST WORK（仕事、画像）3️⃣
+
+---------------------------------*/
+
+  .content-inner {
+    width: 97%;
+  }
+
+  /*
+  テキスト（OUR LATEST WORK）
+---------------------------------*/
+
+  .content-catch {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-catch-text {
+    margin: 0 0 40px 0;
+    line-height: 25px;
+    width: 100%;
+  }
+
+  /*
+  画像（6つ）
+---------------------------------*/
+
+  .content-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content__item {
+    margin: 0;
+  }
+
+  .content__item:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+
+  /*---------------------------------
+
+  1.4️⃣ OUR SKILLS（技術力）4️⃣
+
+---------------------------------*/
+
+  /*
+  画像（OUR SKILLS）
+---------------------------------*/
+
+  .skill-list {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill__item {
+    margin: 88px 0 0 0;
+  }
+  .skill__item:first-child {
+    margin: 0;
+  }
+
+  /*---------------------------------
+
+  2.footer
+
+  ---------------------------------*/
+
+  .footer-inner {
+    width: 97%;
   }
 }
 
 /* **************************
-  SP用
+  🟨🟨🟨  SP用  🟨🟨🟨
 ************************** */
 
 @media screen and (max-width: 767px) {
-  .header-contact-bar {
-    display: block;
+  /*---------------------------------
+
+  1. header（ヘッダー）
+
+---------------------------------*/
+  .header-inner {
+    align-items: center;
   }
 
+  /*
+  アイコン（ header ）
+---------------------------------*/
+
+  .header-icon {
+    font-size: 60px;
+  }
+
+  /*
+  メニューバー（ header ）
+---------------------------------*/
+
+  .header-contact-bar {
+    color: #ddd;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .header-bar-line {
+    width: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-top: 4px;
+  }
+
+  .header-bar-line:first-child {
+    margin-top: 2px;
+  }
   .is-header-button {
     display: none;
+  }
+
+  /*---------------------------------
+
+  1.1️⃣ Bolt Theme（タイトル）1️⃣
+
+  ---------------------------------*/
+
+  .title-inner {
+    padding: 160px 0 130px;
+  }
+
+  /*
+  タイトル
+  ---------------------------------*/
+
+  .title-top {
+    font-size: 80px;
+  }
+
+  /*---------------------------------
+
+  1.2️⃣ WHAT WE CAN DO?（詳細）2️⃣
+
+  ---------------------------------*/
+
+  /*
+  global（画像：スマートフォン）
+---------------------------------*/
+
+  .global-thumb {
+    margin: 0 0 20px 0;
+  }
+
+  /*
+  global（テキスト）
+---------------------------------*/
+
+  .global-note {
+    width: 100%;
+    line-height: 30px;
+  }
+
+  /*---------------------------------
+(
+  1.5️⃣ SNS LINKS TAG（SNSへのリンクタグ）5️⃣
+
+  ---------------------------------*/
+
+  .sns-inner {
+    flex-direction: column;
+    padding: 50px 0;
+    margin: 0 15px;
+  }
+
+  /*
+  アイコンボタン（SNS LINKS TAG）
+---------------------------------*/
+
+  .sns__text-button {
+    color: #74cfae;
+    font-size: 50px;
+    padding: 40px;
+    width: 100%;
   }
 }
