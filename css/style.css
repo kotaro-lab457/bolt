@@ -26,7 +26,7 @@
 ---------------------------------*/
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 ul {
@@ -55,6 +55,7 @@ ul {
 .section-title {
   font-size: 24px;
   text-align: center;
+  font-family: "Raleway", sans-serif;
 }
 
 /*---------------------------------
@@ -124,7 +125,7 @@ ul {
   font-size: 90px;
   font-weight: 700;
   line-height: 95px;
-  /* font-family: "Raleway", sans-serif; */
+  font-family: "Raleway", sans-serif;
   /* margin-bottom: 20px; */
 }
 
@@ -179,7 +180,7 @@ ul {
 
 .global-text {
   font-size: 20px;
-  font-family: "Lato", sans-serif;
+  /* font-family: "Lato", sans-serif; */
   margin-top: 35px;
 }
 
@@ -253,7 +254,7 @@ ul {
   line-height: 25px;
   text-align: center;
   font-size: 20px;
-  font-family: "Lato", sans-serif;
+  /* font-family: "Lato", sans-serif; */
   /* width: 580px; */
   width: 53%;
   margin-right: 90px;
