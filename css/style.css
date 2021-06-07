@@ -55,6 +55,11 @@ a {
   font-family: "Raleway", sans-serif;
 }
 
+.contents {
+  width: 1100px;
+  margin: 0 auto;
+}
+
 /*---------------------------------
   0.header
 ---------------------------------*/
