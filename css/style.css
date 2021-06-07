@@ -20,9 +20,7 @@
 ---------------------------------*/
 
 /*---------------------------------
-
   全体共通
-
 ---------------------------------*/
 
 body {
@@ -33,9 +31,8 @@ ul {
   list-style: none;
 }
 
-.contents {
-  width: 1100px;
-  margin: 0 auto;
+a {
+  text-decoration: none;
 }
 
 .button {
@@ -338,7 +335,6 @@ ul {
 ---------------------------------*/
 
 .sns__text-button {
-  color: #74cfae;
   font-size: 40px;
   padding: 30px;
   width: 185px;
@@ -352,6 +348,10 @@ ul {
 
 .sns__text-button:hover {
   background-color: #fff;
+}
+
+.sns__text-button a {
+  color: #74cfae;
 }
 
 /*---------------------------------
