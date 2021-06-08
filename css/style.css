@@ -454,11 +454,11 @@ a {
     margin: 0 auto;
   }
 
-  .content__item:nth-child(3) {
+  .content__item:nth-child(3n) {
     margin: 0 auto;
   }
 
-  .content__item:nth-child(4n) {
+  .content__item:nth-child(3n + 4) {
     margin-top: 80px;
   }
 
